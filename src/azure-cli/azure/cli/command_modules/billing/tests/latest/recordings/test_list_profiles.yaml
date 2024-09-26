@@ -1,0 +1,169 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - billing account list
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --include-all
+      User-Agent:
+      - AZURECLI/2.65.0 azsdk-python-core/1.28.0 Python/3.12.6 (Windows-11-10.0.22631-SP0)
+    method: GET
+    uri: https://management.azure.com/providers/Microsoft.Billing/billingAccounts?includeAll=true&includeAllWithoutBillingProfiles=false&includeDeleted=false&includePendingAgreement=false&includeResellee=false&api-version=2024-04-01
+  response:
+    body:
+      string: '{"value":[{"id":"/providers/Microsoft.Billing/billingAccounts/e261ef40-3517-515d-3680-8be4252ae148:efd45d14-e459-4bd7-a883-f3b176d0c335_2019-05-31","name":"e261ef40-3517-515d-3680-8be4252ae148:efd45d14-e459-4bd7-a883-f3b176d0c335_2019-05-31","properties":{"accountStatus":"Active","accountType":"Individual","accountSubType":"Professional","agreementType":"MicrosoftCustomerAgreement","displayName":"BAMI
+        Test Account","hasReadAccess":true,"primaryBillingTenantId":"25190330-c2fa-4110-b63d-5cda77380ac6","billingRelationshipTypes":["Direct"],"qualifications":["Commercial"]},"type":"Microsoft.Billing/billingAccounts"},{"id":"/providers/Microsoft.Billing/billingAccounts/e261ef40-3517-515d-3680-8be4252ae148:0790f1fc-f274-4457-afc3-f3b0c90850ba_2019-05-31","name":"e261ef40-3517-515d-3680-8be4252ae148:0790f1fc-f274-4457-afc3-f3b0c90850ba_2019-05-31","properties":{"accountStatus":"Active","accountType":"Individual","accountSubType":"Professional","agreementType":"MicrosoftCustomerAgreement","displayName":"SMB
+        Account","hasReadAccess":true,"primaryBillingTenantId":"25190330-c2fa-4110-b63d-5cda77380ac6","registrationNumber":{"id":"12345678","required":false,"type":["RegistrationNumber"]},"billingRelationshipTypes":["Direct"],"qualifications":["Commercial"]},"type":"Microsoft.Billing/billingAccounts"}]}'
+    headers:
+      api-supported-versions:
+      - 2018-11-01-preview, 2019-10-01-preview, 2020-05-01, 2020-11-01-privatepreview,
+        2022-10-01-privatepreview, 2024-04-01, 2024-08-01-preview
+      cache-control:
+      - no-cache
+      content-length:
+      - '1309'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 26 Sep 2024 00:08:39 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-ms-service-version:
+      - 10.6.2811.738
+      x-msedge-ref:
+      - 'Ref A: 8F4F2D5BD4C8434D8EF4FB230A904320 Ref B: CO6AA3150218025 Ref C: 2024-09-26T00:08:38Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - billing profile list
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --account-name
+      User-Agent:
+      - AZURECLI/2.65.0 azsdk-python-core/1.28.0 Python/3.12.6 (Windows-11-10.0.22631-SP0)
+    method: GET
+    uri: https://management.azure.com/providers/Microsoft.Billing/billingAccounts/e261ef40-3517-515d-3680-8be4252ae148%3Aefd45d14-e459-4bd7-a883-f3b176d0c335_2019-05-31/billingProfiles?api-version=2020-05-01
+  response:
+    body:
+      string: '{"totalCount":1,"value":[{"id":"/providers/Microsoft.Billing/billingAccounts/e261ef40-3517-515d-3680-8be4252ae148:efd45d14-e459-4bd7-a883-f3b176d0c335_2019-05-31/billingProfiles/4IA3-TK4E-BG7-M77W-SGB","name":"4IA3-TK4E-BG7-M77W-SGB","properties":{"billingRelationshipType":"Direct","billTo":{"addressLine1":"1
+        Microsoft Way ","city":"Redmond","companyName":"Microsoft","country":"US","postalCode":"98052","region":"WA"},"currency":"USD","displayName":"Microsoft","enabledAzurePlans":[{"skuId":"0001","skuDescription":"Microsoft
+        Azure Plan"}],"hasReadAccess":true,"invoiceDay":5,"invoiceEmailOptIn":false,"invoiceSections":{"hasMoreResults":false},"spendingLimit":"Off","status":"Active","systemId":"4IA3-TK4E-BG7-M77W-SGB","tags":{},"targetClouds":[]},"type":"Microsoft.Billing/billingAccounts/billingProfiles"}]}'
+    headers:
+      api-supported-versions:
+      - 2018-11-01-preview, 2019-10-01-preview, 2020-05-01, 2020-11-01-privatepreview,
+        2022-10-01-privatepreview, 2024-04-01, 2024-08-01-preview
+      cache-control:
+      - no-cache
+      content-length:
+      - '814'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 26 Sep 2024 00:08:40 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-ms-service-version:
+      - 10.6.2811.738
+      x-msedge-ref:
+      - 'Ref A: 0D093D114F164A598D2B419849D2D90C Ref B: CO6AA3150217039 Ref C: 2024-09-26T00:08:40Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - billing profile get
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --billing-account-name --billing-profile-name
+      User-Agent:
+      - AZURECLI/2.65.0 azsdk-python-core/1.28.0 Python/3.12.6 (Windows-11-10.0.22631-SP0)
+    method: GET
+    uri: https://management.azure.com/providers/Microsoft.Billing/billingAccounts/e261ef40-3517-515d-3680-8be4252ae148%3Aefd45d14-e459-4bd7-a883-f3b176d0c335_2019-05-31/billingProfiles/4IA3-TK4E-BG7-M77W-SGB?api-version=2024-04-01
+  response:
+    body:
+      string: '{"id":"/providers/Microsoft.Billing/billingAccounts/e261ef40-3517-515d-3680-8be4252ae148:efd45d14-e459-4bd7-a883-f3b176d0c335_2019-05-31/billingProfiles/4IA3-TK4E-BG7-M77W-SGB","name":"4IA3-TK4E-BG7-M77W-SGB","properties":{"billingRelationshipType":"Direct","billTo":{"addressLine1":"1
+        Microsoft Way ","city":"Redmond","companyName":"Microsoft","country":"US","postalCode":"98052","region":"WA","isValidAddress":true},"currency":"USD","displayName":"Microsoft","enabledAzurePlans":[{"skuId":"0001","skuDescription":"Microsoft
+        Azure Plan"}],"hasReadAccess":true,"invoiceDay":5,"invoiceEmailOptIn":false,"invoiceRecipients":[],"shipTo":{"addressLine1":"1
+        Microsoft Way ","city":"Redmond","companyName":"Microsoft","country":"US","postalCode":"98052","region":"WA","isValidAddress":true},"soldTo":{"addressLine1":"1
+        Microsoft Way ","city":"Redmond","companyName":"Microsoft","country":"US","postalCode":"98052","region":"WA","isValidAddress":true},"spendingLimit":"Off","status":"Active","systemId":"4IA3-TK4E-BG7-M77W-SGB","targetClouds":[]},"type":"Microsoft.Billing/billingAccounts/billingProfiles","systemData":{"createdAt":"2024-07-02T19:43:42.6730697Z","lastModifiedAt":"2024-07-02T19:43:42.6730697Z"}}'
+    headers:
+      api-supported-versions:
+      - 2018-11-01-preview, 2019-10-01-preview, 2020-05-01, 2020-11-01-privatepreview,
+        2022-10-01-privatepreview, 2024-04-01, 2024-08-01-preview
+      cache-control:
+      - no-cache
+      content-length:
+      - '1205'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 26 Sep 2024 00:08:40 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-ms-service-version:
+      - 10.6.2811.738
+      x-msedge-ref:
+      - 'Ref A: ABF0F4A8580E4CF1B78CBE9BC7CF147F Ref B: CO6AA3150217025 Ref C: 2024-09-26T00:08:40Z'
+    status:
+      code: 200
+      message: OK
+version: 1

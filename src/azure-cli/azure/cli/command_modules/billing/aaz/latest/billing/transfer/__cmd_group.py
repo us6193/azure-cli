@@ -15,7 +15,7 @@ from azure.cli.core.aaz import *
     "billing transfer",
 )
 class __CMDGroup(AAZCommandGroup):
-    """Manage transfer
+    """Get, List, Cancel, Initiate operations at Billing Account scope for Transfers and is only for customers on MCA and MPA
     """
     pass
 

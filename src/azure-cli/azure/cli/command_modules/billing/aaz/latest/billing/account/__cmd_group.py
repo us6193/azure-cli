@@ -15,7 +15,7 @@ from azure.cli.core.aaz import *
     "billing account",
 )
 class __CMDGroup(AAZCommandGroup):
-    """Billing account.
+    """Multiple operations for billing accounts around payment, subscriptions, invoice sections
     """
     pass
 

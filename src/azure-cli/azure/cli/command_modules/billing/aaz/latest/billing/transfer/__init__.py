@@ -10,5 +10,9 @@
 
 from .__cmd_group import *
 from ._accept_transfer import *
+from ._cancel import *
+from ._get import *
+from ._initiate import *
 from ._list import *
 from ._show import *
+from ._update import *

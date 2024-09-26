@@ -15,7 +15,7 @@ from azure.cli.core.aaz import *
     "billing transfer show",
 )
 class Show(AAZCommand):
-    """Get a transfer request by ID. The caller must be the recipient of the transfer request.
+    """Get a transfer request by ID. The operation is supported only for billing accounts with agreement type Microsoft Customer Agreement.
     """
 
     _aaz_info = {

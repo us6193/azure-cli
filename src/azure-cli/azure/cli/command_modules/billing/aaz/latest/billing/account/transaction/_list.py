@@ -193,6 +193,7 @@ class List(AAZCommand):
             properties = cls._schema_on_200.value.Element.properties
             properties.azure_credit_applied = AAZObjectType(
                 serialized_name="azureCreditApplied",
+                flags={"read_only": True},
             )
             _ListHelper._build_schema_amount_read(properties.azure_credit_applied)
             properties.billing_currency = AAZStrType(
@@ -223,6 +224,7 @@ class List(AAZCommand):
             )
             properties.effective_price = AAZObjectType(
                 serialized_name="effectivePrice",
+                flags={"read_only": True},
             )
             _ListHelper._build_schema_amount_read(properties.effective_price)
             properties.exchange_rate = AAZFloatType(
@@ -243,6 +245,7 @@ class List(AAZCommand):
             properties.kind = AAZStrType()
             properties.market_price = AAZObjectType(
                 serialized_name="marketPrice",
+                flags={"read_only": True},
             )
             _ListHelper._build_schema_amount_read(properties.market_price)
             properties.order_id = AAZStrType(
@@ -286,6 +289,7 @@ class List(AAZCommand):
             )
             properties.sub_total = AAZObjectType(
                 serialized_name="subTotal",
+                flags={"read_only": True},
             )
             _ListHelper._build_schema_amount_read(properties.sub_total)
             properties.subscription_id = AAZStrType(
@@ -296,7 +300,9 @@ class List(AAZCommand):
                 serialized_name="subscriptionName",
                 flags={"read_only": True},
             )
-            properties.tax = AAZObjectType()
+            properties.tax = AAZObjectType(
+                flags={"read_only": True},
+            )
             _ListHelper._build_schema_amount_read(properties.tax)
             properties.transaction_amount = AAZObjectType(
                 serialized_name="transactionAmount",

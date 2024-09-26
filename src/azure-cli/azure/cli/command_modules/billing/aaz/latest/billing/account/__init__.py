@@ -9,4 +9,13 @@
 # flake8: noqa
 
 from .__cmd_group import *
+from ._add_payment_term import *
+from ._cancel_payment_term import *
+from ._confirm_transition import *
+from ._get import *
+from ._list import *
 from ._list_invoice_section import *
+from ._list_invoice_sections_with_create_subscription_permission import *
+from ._update import *
+from ._validate_payment_term import *
+from ._wait import *

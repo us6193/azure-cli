@@ -9,3 +9,15 @@
 # flake8: noqa
 
 from .__cmd_group import *
+from ._amend import *
+from ._download_by_billing_account import *
+from ._download_by_billing_subscription import *
+from ._download_document_by_billing_account import *
+from ._download_document_by_billing_subscription import *
+from ._download_summary_by_ea_billing_account import *
+from ._get import *
+from ._get_by_billing_account import *
+from ._get_by_billing_subscription import *
+from ._list_by_billing_account import *
+from ._list_by_billing_profile import *
+from ._list_by_billing_subscription import *

@@ -15,7 +15,7 @@ from azure.cli.core.aaz import *
     "billing profile",
 )
 class __CMDGroup(AAZCommandGroup):
-    """Manage profile
+    """Multiple operations at the billing profile scope like create, delete, list etc.
     """
     pass
 

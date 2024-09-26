@@ -15,7 +15,7 @@ from azure.cli.core.aaz import *
     "billing transfer list",
 )
 class List(AAZCommand):
-    """List the transfer requests received by the caller.
+    """List the transfer requests for an invoice section. The operation is supported only for billing accounts with agreement type Microsoft Customer Agreement.
     """
 
     _aaz_info = {

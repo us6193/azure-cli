@@ -15,7 +15,7 @@ from azure.cli.core.aaz import *
     "billing enrollment-account",
 )
 class __CMDGroup(AAZCommandGroup):
-    """Manage enrollment account
+    """Get and List operations for EA customers at Enrollment Account, Department, Account level
     """
     pass
 
